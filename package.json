@@ -1,0 +1,28 @@
+{
+  "name": "bql",
+  "version": "0.1.0",
+  "description": "A very bourgeois querying language",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khubo/bql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khubo/bql/issues"
+  },
+  "homepage": "https://github.com/khubo/bql#readme",
+  "devDependencies": {
+    "tape": "^5.2.2"
+  },
+  "dependencies": {
+    "mongodb": "^4.0.0",
+    "readline-sync": "^1.4.10"
+  }
+}
