@@ -1,2 +1,2 @@
 # bql
-A very bourgeois queryinglanguage
+A very bourgeois querying language
