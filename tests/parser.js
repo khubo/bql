@@ -32,3 +32,18 @@ test("#find with sort", function (t) {
   t.equal(output.sort, "name");
   t.end();
 });
+
+test("#insert query", function (t) {
+  const lexer = new Lexer(`add to users name="pikachu" type="fire"`);
+  const parser = new Parser(lexer);
+
+  const output = parser.parse();
+  t.equal(output.type, "insert");
+  t.equal(output.collection, "users");
+
+  t.equal(
+    JSON.stringify(output.data),
+    JSON.stringify({ name: "pikachu", type: "fire" })
+  );
+  t.end();
+});
